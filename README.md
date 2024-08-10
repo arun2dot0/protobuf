@@ -1,4 +1,4 @@
-# Kubernetes example with Protobuf Communication
+# Kubernetes example with Grpc Protobuf
 
 I have the two application setup as client and server
 - Greeter Client for Rest API and Protobuf client for sending the Protobuf request
