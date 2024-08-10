@@ -66,6 +66,7 @@ Protobuf test
 curl http://localhost:8080/hello?name=Biker
 curl http://localhost:8080/hello?name=MountainBiker
 ```
+![k8s-server-log](https://github.com/user-attachments/assets/f192a49a-f3db-4def-aef6-dc70141ef1b5)
 
 Clean up 
 ```
