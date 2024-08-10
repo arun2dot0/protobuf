@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package com.example.demo;
+
+// Define the request message
+message HelloRequest {
+  string name = 1;
+}
+
+// Define the response message
+message HelloReply {
+  string message = 1;
+}
+
+// Define the service
+service GreeterService {
+  // Unary RPC method
+  rpc SendHelloRequest (HelloRequest) returns (HelloReply);
+}

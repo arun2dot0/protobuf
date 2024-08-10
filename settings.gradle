@@ -1,0 +1,2 @@
+rootProject.name = 'protobuf'
+include 'greeter-client', 'greeter-server'

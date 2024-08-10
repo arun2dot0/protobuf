@@ -1,0 +1,9 @@
+spring.application.name: "greeter-client"
+server.port: 8080
+grpc.server.port: 9091
+grpc:
+  client:
+    greeter-service:
+      address: "static://greeter-server:9090"
+      enableKeepAlive: true
+      negotiationType: plaintext
