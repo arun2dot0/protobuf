@@ -4,6 +4,6 @@ grpc.server.port: 9091
 grpc:
   client:
     greeter-service:
-      address: "static://greeter-server:9090"
+      address: "static://localhost:9090"
       enableKeepAlive: true
       negotiationType: plaintext

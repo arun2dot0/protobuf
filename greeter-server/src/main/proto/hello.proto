@@ -15,5 +15,5 @@ message HelloReply {
 // Define the service
 service GreeterService {
   // Unary RPC method
-  rpc SendHelloRequest (HelloRequest) returns (HelloReply);
+  rpc SendHelloRequest (stream HelloRequest) returns (stream HelloReply);
 }

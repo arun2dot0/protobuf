@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.stream.IntStream;
 
 
 @RestController
@@ -30,7 +31,12 @@ public class TestController {
 
     @GetMapping("/hello")
     public String testGrpc(@RequestParam String name) {
-        return greeterClientService.sendHello(name);
+        IntStream.rangeClosed(1, 1000).forEach( i ->{
+                    greeterClientService.sendHelloRequests();
+                }
+               );
+
+        return "Sent 1000 times";
 
     }
 }
